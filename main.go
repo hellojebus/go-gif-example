@@ -7,6 +7,7 @@ import (
 	"image/gif"
 	"image"
 	"math"
+	"os"
 )
 
 var palette = []color.Color{color.White, color.Black}
@@ -17,7 +18,7 @@ const (
 )
 
 func main(){
-
+	lissajous(os.Stdout)
 }
 
 func lissajous(out io.Writer){
